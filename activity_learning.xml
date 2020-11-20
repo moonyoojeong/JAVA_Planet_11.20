@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/splash_background">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view1"
+        android:layout_width="380dp"
+        android:layout_height="215dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="380dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/youtube_view1"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:background="@drawable/scroll_textview">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/abc" />
+        <!-- text는 따로 xml 빼서 써도 되고, 걍 여기 써도 되고  -->
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:layout_weight="1"
+            android:text="@string/codelearn" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/weblearn" />
+    </LinearLayout>
+
+</RelativeLayout>
+    <!-- 학습화면xml  -->
+    <!--플레이 버튼이 없는 버전  -->
+    t>
